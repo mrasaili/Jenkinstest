@@ -1,15 +1,15 @@
-node 
+node ()
 {
   stage ( 'job1')
   {
-    touch abc.txt
+    sh "touch abc.txt"
    }
    stage ('job2')
    {
-     echo " Hello world"
+    sh "echo  Hello world"
     }
     stage ('job3')
     {
-      echo " Hello world again"
+     sh "echo  Hello world again"
       }
     }  
